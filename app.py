@@ -89,10 +89,10 @@ class AddEmployeeToCompany(Resource):
             return {'message': 'Failed to send message', 'error': str(e)}, 500
 
 
-api.add_resource(Companies, '/')
-api.add_resource(addCompany, '/add')
-api.add_resource(updateCompany, '/update/<int:id>')
-api.add_resource(deleteCompany, '/delete/<int:id>')
+api.add_resource(Companies, '/companies')
+api.add_resource(addCompany, '/companies/add')
+api.add_resource(updateCompany, '/companies/update/<int:id>')
+api.add_resource(deleteCompany, '/comopanies/delete/<int:id>')
 api.add_resource(AddEmployeeToCompany, '/companies/<int:company_id>/employees')
 
 
