@@ -14,7 +14,7 @@ companies = {
     5: {'name' : 'Apple', 'location' : 'USA', 'compIdent' : '5'},
 }
 
-sqs = boto3.client('sqs', region_name='us-east-1')
+sqs = boto3.client('sqs', region_name='us-east-2')
 queue_url = 'https://sqs.us-east-2.amazonaws.com/723851871329/my-api-queue'
 
 class Companies(Resource):
